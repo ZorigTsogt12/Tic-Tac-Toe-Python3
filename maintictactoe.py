@@ -152,11 +152,10 @@ while gameon:
             if switch == True:
                 update_board(board, player1, position)
                 switch = False
-                display_board(board)
             else:
                 update_board(board, player2, position)
                 switch = True      
-                display_board(board)
+                
 
         x_win = check_win(board, 'X')
         o_win = check_win(board, 'O')
